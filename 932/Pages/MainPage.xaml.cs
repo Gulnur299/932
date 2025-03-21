@@ -29,5 +29,10 @@ namespace _932.Pages
         {
 
         }
+
+        private void lvMain_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

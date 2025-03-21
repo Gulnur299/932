@@ -29,16 +29,19 @@
         <TextBox x:Name="tbSearch" Grid.Row="0" Grid.Column="2" BorderThickness="4"/>
         <ComboBox x:Name="tbSort" Grid.Column="3" Grid.Row="0"/>
         <ComboBox x:Name="cbFilter" Grid.Column="4" Grid.Row="0"/>
-        <ListView x:Name="lvMain" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="5">
+        <ListView x:Name="lvMain" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="5" SelectionChanged="lvMain_SelectionChanged">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <UniformGrid Columns="2"/>
-                </ItemsPanelTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                    </StackPanel>
-                </DataTemplate>
+                </ItemsPanelTemplate>            
             </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                <StackPanel>
+                    
+                </StackPanel>
+            </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
     </Grid>
 </Page>
